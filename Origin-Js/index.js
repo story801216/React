@@ -1,4 +1,9 @@
-const total = document.getElementById('total')
-document.getElementById('total').addEventListener('click', function () {
-  total.innerHTML = +total.innerHTML + 1
+document.getElementById('add').addEventListener('click', function () {
+  document.getElementById('total').innerHTML =
+    +document.getElementById('total').innerHTML + 1
+})
+
+document.getElementById('sub').addEventListener('click', function () {
+  document.getElementById('total').innerHTML =
+    +document.getElementById('total').innerHTML - 1
 })

@@ -13,6 +13,7 @@ function Child(props) {
   )
 }
 
+// 預設屬性
 Child.defaultProps = {
   name: '陳小花',
   text: 'Hello',

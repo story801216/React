@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import MyButton from './MyButton'
-
+// 父母元件
 function Counter() {
   // [得到狀態, 設定狀態] = useState(初始值)
   const [total, setTotal] = useState(0)

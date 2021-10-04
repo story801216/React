@@ -13,6 +13,7 @@ function App() {
       {count > 0 && `目前總數為${count}`}
       <hr />
       {/* if...else */}
+      {/* 如果foo是true的話就是1，false就是2 */}
       {foo ? 1 : 2}
     </>
   )

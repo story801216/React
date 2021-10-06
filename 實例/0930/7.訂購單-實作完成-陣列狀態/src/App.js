@@ -36,6 +36,7 @@ const products = [
 ]
 
 // 初始化狀態用的函式
+// initState = [1,1,1,1]
 const initState = (array) => {
   const state = []
   for (let i = 0; i < array.length; i++) {
@@ -52,7 +53,8 @@ function App() {
   //const [counts, setCounts] = useState(Array(products.length).fill(1))
 
   // Summary
-  // 計算目前所有的商品數量
+  // 計算目前所有的商品數量(初始值為initState(products))//[1,1,1,1]
+  // 所以每一個新增商品都會讓initState陣列多增加一個初始值為1
   const productCount = () => {
     let totalCount = 0
 

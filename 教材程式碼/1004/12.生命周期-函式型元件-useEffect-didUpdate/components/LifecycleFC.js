@@ -7,14 +7,14 @@ const initialState = () => {
 
 function LifecycleFC(props) {
   const [total, setTotal] = useState(initialState())
-  const [didMount, setDidMount] = useState(false)
+  const [didMount, setDidMount] = useState(false) // 預設didMount的初始狀態為false，就不會一開始載入後就執行
 
   // 模擬componentDidMount
   useEffect(() => {
     // didMount
     console.log('componentDidMount(模擬)')
 
-    // 設定目前進入didMount階段
+    // 載入頁面且生成元件完後設定目前進入didMount階段，之後元件產生變化後就會執行didMount
     setDidMount(true)
   }, [])
 
